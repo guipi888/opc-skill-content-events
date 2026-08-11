@@ -39,3 +39,9 @@ Set these environment variables:
 ## License
 
 MIT
+
+## 关于作者
+
+💡 更多实用 AI 效率工具和技能，关注公众号「桂皮AI实战」
+
+📱 加入自媒体&AI 副业变现交流群：https://e418e2e692454bfaa8b6206e3f0ba789.app.codebuddy.work
