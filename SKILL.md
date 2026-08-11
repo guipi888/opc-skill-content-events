@@ -1,3 +1,9 @@
+---
+name: opc-skill-content-events
+description: MCP Skill: read OPC events from OPC tool station
+version: 0.1.0
+---
+
 # SKILL.md — OPC 赛事活动读取
 
 > 一句话：把 OPC 的赛事活动装进你的 AI 助手，对话式查询，无需手动翻网页。
