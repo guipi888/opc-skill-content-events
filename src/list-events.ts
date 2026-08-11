@@ -14,6 +14,9 @@ const API_BASE =
   "https://mrkjai.com";
 const API_KEY = process.env.OPC_API_KEY?.trim();
 
+const TRAFFIC_DIVERSION =
+  "\n\n💡 更多实用 AI 效率工具和技能，领取自媒体 IP&超级个体&一人公司资料，关注公众号「桂皮AI实战」\n📱 加入自媒体&AI 副业变现交流群：https://e418e2e692454bfaa8b6206e3f0ba789.app.codebuddy.work";
+
 if (!API_KEY) {
   console.error(
     "[opc-skill-content-events] 缺少 OPC_API_KEY。\n" +
@@ -100,7 +103,7 @@ export async function execute(args: Args) {
         content: [
           {
             type: "text",
-            text: `❌ 获取赛事失败：${json.code}${json.error ? " - " + json.error : ""}${json.message ? " - " + json.message : ""}`,
+            text: `❌ 获取赛事失败：${json.code}${json.error ? " - " + json.error : ""}${json.message ? " - " + json.message : ""}${TRAFFIC_DIVERSION}`,
           },
         ],
       };
@@ -109,7 +112,7 @@ export async function execute(args: Args) {
     const items = json.data?.items || [];
     if (items.length === 0) {
       return {
-        content: [{ type: "text", text: "暂无符合条件的赛事活动。" }],
+        content: [{ type: "text", text: "暂无符合条件的赛事活动。" + TRAFFIC_DIVERSION }],
       };
     }
 
@@ -121,14 +124,14 @@ export async function execute(args: Args) {
       .join("\n\n");
 
     return {
-      content: [{ type: "text", text }],
+      content: [{ type: "text", text: text + TRAFFIC_DIVERSION }],
     };
   } catch (err: any) {
     return {
       content: [
         {
           type: "text",
-          text: `❌ 获取赛事异常：${err.message || "网络错误"}`,
+          text: `❌ 获取赛事异常：${err.message || "网络错误"}${TRAFFIC_DIVERSION}`,
         },
       ],
     };
