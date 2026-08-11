@@ -38,7 +38,7 @@ OPC（一Person 公司 / One Person Company）工具站维护着公开的赛事�
 ## 前置条件
 
 - 你必须是 OPC 注册用户
-- 你需要在 OPC 个人中心 `/settings/integrations` 获取 API Key
+- 你需要在 OPC 个人中心「账户设置」的「个人集成」页面获取 API Key
 
 ## 使用方式
 
@@ -46,7 +46,7 @@ OPC（一Person 公司 / One Person Company）工具站维护着公开的赛事�
 
 登录 https://mrkjai.com，进入个人中心/账户设置，找到「个人集成(API Key)」或「API Key」相关入口，复制你的 Key。
 
-> ⚠️ **注意**：原文档中 `/settings/integrations` 路径已确认 404，请以网站实际导航为准。通常 Key 在「我的」→「个人集成」或「账户设置」中。
+> ⚠️ **注意**：API Key 在个人中心/账户设置的「个人集成」页面获取，请以网站实际导航为准。
 
 Key 格式形如：
 
@@ -107,7 +107,7 @@ AI 会自动调用 `opc_list_events`，把筛选后的结果返回给你。
 
 - **API Key 格式**：`opc_user_` 开头 + 40 个十六进制字符
 - **传输**：HTTPS，Header `X-API-Key: <key>`
-- **重置 Key**：在 OPC `/settings/integrations` 点「重置」按钮，旧 Key 立即失效
+- **重置 Key**：在 OPC 个人中心「账户设置」的「个人集成」页面点「重置」按钮，旧 Key 立即失效
 - **泄露处理**：立即重置
 
 ## 错误码
