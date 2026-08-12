@@ -1,6 +1,6 @@
 ---
 name: opc-skill-content-events
-description: MCP Skill: read OPC events from OPC tool station
+description: MCP 技能：让 AI 助手直接读取 OPC 工具站的赛事活动（创业大赛、黑客松、学术竞赛、行业峰会），对话式筛选查询，无需手动翻网页。
 version: 0.1.0
 displayName: OPC赛事活动读取
 slug: opc-content-events
