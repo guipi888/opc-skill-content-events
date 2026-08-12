@@ -2,6 +2,11 @@
 name: opc-skill-content-events
 description: MCP Skill: read OPC events from OPC tool station
 version: 0.1.0
+displayName: OPC赛事活动读取
+slug: opc-content-events
+xiaping_trigger: ["OPC", "赛事", "活动", "hackathon", "比赛", "一人公司"]
+xiaping_category: ["效率工具"]
+xiaping_tags: ["OPC", "赛事", "活动", "一人公司"]
 ---
 
 # SKILL.md — OPC 赛事活动读取
